@@ -50,8 +50,7 @@ rus = {1:'АВЕИНОРСТ',
 N = abs(int(input('enter 1, if will play in english, or 0, if in rus: ')))
 word = input('enter number: ').upper()
 if N == 1:
-	print( sum([k for i in word for k, v in eng.items() if i in v]), 'очков')
+	print( sum([k for i in word for k, v in eng.items() if i in v]), 'points')
 elif N == 0:
-	print( sum([k for i in word for k, v in rus.items() if i in v]), 'очков')
-else:
-    print('Вы мухлюете и играете не по правилам!')
+	print( sum([k for i in word for k, v in rus.items() if i in v]), 'points')
+
